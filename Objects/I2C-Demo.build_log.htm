@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kashyap Ravichandran, NC State, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+C:\Users\kashy\OneDrive\Desktop\Sem 1\Embedded Systems Architecture\ESA-19-master\Projects\Project_1\Project_1_kravich2\I2C-Demo.uvprojx
+Project File Date:  10/08/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_MKL25Z4.s...
+compiling delay.c...
+compiling LEDs.c...
+compiling system_MKL25Z4.c...
+compiling mma8451.c...
+compiling RTCS.c...
+compiling i2c_p1.c...
+Source\i2c_p1.c(93): warning:  #550-D: variable "dummy"  was set but never used
+  	uint8_t dummy, num_bytes_read=0, is_last_read=0;
+Source\i2c_p1.c: 1 warning, 0 errors
+compiling timers.c...
+compiling main.c...
+Source\main.c(89): warning:  #550-D: variable "dummy"  was set but never used
+  	static uint8_t dummy, num_bytes_read=0, is_last_read=0, num_bytes_written=0;;
+Source\main.c(480): warning:  #1-D: last line of file ends without a newline
+  		
+Source\main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=4040 RO-data=224 RW-data=56 ZI-data=600  
+".\Objects\I2C-Demo.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.13.0.pack
+                Keil.Kinetis_KLxx_DFP.1.13.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\kashy\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\kashy\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\system_MKL25Z4.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
